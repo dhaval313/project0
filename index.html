@@ -7,11 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale =1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
+        html, body{
+            height:100%;
+        }
         .sidebar{
-            height: 100%;
-            width: 300px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 20px;
+            mask-border-mode: ;
             background-color: #f64c72;
-            align-self: left;
         }
         .header{
             position: relative;
@@ -35,6 +40,15 @@
                 height: 80px;
                 width: 380px;
             }
+            .sidebar{
+                height: 100%;
+                width: 300px;
+                align-self: left;
+                display: inline-block;
+            }
+            .btn-group{
+                display: none;
+            }
         }
         @media (max-width: 599px){
             .header{
@@ -44,15 +58,40 @@
                 width: 190px;
                 height: 40px;
             }
+            .sidebar{
+                display: none;
+            }
+            .btn-group{
+                display: inline-block;
+                margin: 10px;
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
     </head>
     <body>
         <div class="header">
-            <img src="D:\CS50\project0\project0\python.png">
+            <img src="https://i.imgur.com/elglZ3W.png">
         </div>
         <div class="sidebar">
-            hello
+            <ul class="list-group list-grout-flush">
+                <li class="list-group-item">
+                    <a href="">Applications</a>    
+                </li>
+                <li class="list-group-item">
+                    <a href="">Documentation</a>    
+                </li>
+                <li class="list-group-item">
+                    <a href="">Downloads</a>    
+                </li>
+            </ul>
         </div>
+        <div class="btn-group grid" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary grid-item">Home</button>
+            <button type="button" class="btn btn-primary grid-item">Applications</button>
+            <button type="button" class="btn btn-primary grid-item">Documentation</button>
+            <button type="button" class="btn btn-primary grid-item">Downloads</button>
+          </div>
     </body>
 </html>
