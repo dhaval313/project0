@@ -22,7 +22,7 @@
             position: relative;
             width: 100%;
             background-color: #ffffff;
-            box-shadow: 2px 2px 4px gray;
+            box-shadow: 0px 0px 8px gray;
         }
         img{
             position: absolute;
@@ -32,9 +32,10 @@
             bottom: 0;
             margin: auto;
         }
-        @media (min-width: 650px){
+        @media (min-width: 700px){
             .header{
                 height: 15%;
+                width: 100%;
             }
             img{
                 height: 80%;
@@ -46,11 +47,11 @@
                 align-self: left;
                 display: inline-block;
             }
-            .btn-group{
+            .buttons{
                 display: none;
             }
         }
-        @media (max-width: 649px){
+        @media (max-width: 699px){
             .header{
                 height: 50px;
             }
@@ -61,11 +62,18 @@
             .sidebar{
                 display: none;
             }
-            .btn-group{
+            .buttons{
                 display: inline-block;
-                margin: 10px;
+                margin: 2%;
                 width: 100%;
-                text-align: center;
+                align-items: center;
+                padding: 2%;
+            }
+            .btn{
+                width: 20%;
+                height: 5%;
+                font-size: 2vw;
+                align-content: center;
             }
         }
     </style>
@@ -87,7 +95,7 @@
                 </li>
             </ul>
         </div>
-        <div class="btn-group btn-group-justified" role="group" aria-label="Basic example">
+        <div class="buttons">
             <button type="button" class="btn btn-primary">Home</button>
             <button type="button" class="btn btn-primary">Applications</button>
             <button type="button" class="btn btn-primary">Documentation</button>
