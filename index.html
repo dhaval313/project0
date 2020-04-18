@@ -9,19 +9,26 @@
     <style>
         html, body{
             height:100%;
+            width: 100%;
+        }
+        .container{
+            float: right;
+            width: 80%;
+            height: 100%;
+            background-color: #eae7dc;
         }
         .sidebar{
+            float: left;
             font-size: 30px;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             padding: 20px;
-            mask-border-mode: ;
-            background-color: #f64c72;
+            background-color: #0b0c10;
         }
         .header{
             position: relative;
             width: 100%;
-            background-color: #ffffff;
+            background-color: #1f2833;
             box-shadow: 0px 0px 8px gray;
         }
         img{
@@ -37,7 +44,7 @@
                 height: 15%;
                 width: 100%;
             }
-            img{
+            .img{
                 height: 80%;
                 width: 30%;
             }
@@ -55,7 +62,7 @@
             .header{
                 height: 50px;
             }
-            img{
+            .img{
                 width: 190px;
                 height: 40px;
             }
@@ -80,10 +87,13 @@
     </head>
     <body>
         <div class="header">
-            <img src="https://i.imgur.com/elglZ3W.png">
+            <img src="https://i.imgur.com/elglZ3W.png" class="img">
         </div>
         <div class="sidebar">
             <ul class="list-group list-grout-flush" style="width: 100%; font-size: 1.5vw;">
+                <li class="list-group-item">
+                    <a href="">Home</a>    
+                </li>
                 <li class="list-group-item">
                     <a href="">Applications</a>    
                 </li>
@@ -96,10 +106,13 @@
             </ul>
         </div>
         <div class="buttons">
-            <button type="button" class="btn btn-primary">Home</button>
-            <button type="button" class="btn btn-primary">Applications</button>
-            <button type="button" class="btn btn-primary">Documentation</button>
-            <button type="button" class="btn btn-primary">Downloads</button>
+            <button type="button" class="btn btn-secondary">Home</button>
+            <button type="button" class="btn btn-secondary">Applications</button>
+            <button type="button" class="btn btn-secondary">Documentation</button>
+            <button type="button" class="btn btn-secondary">Downloads</button>
+        </div>
+        <div class="container">
+
         </div>
     </body>
 </html>
