@@ -5,25 +5,36 @@
             Python - Home
         </title>
         <meta name="viewport" content="width=device-width, initial-scale =1.0">
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         html, body{
             height:100%;
-            width: 100%;
+        }
+        h1{
+            padding: 2%;
+            font-size: 7vw;
+            color: gray;
+        }
+        p{
+            font-size: 2vw;
+            padding: 1%;
+            color: ;
         }
         .container{
-            float: right;
             width: 80%;
             height: 100%;
             background-color: #eae7dc;
+            float:right;
+            font-family: 'Cairo';
         }
         .sidebar{
-            float: left;
             font-size: 30px;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             padding: 20px;
             background-color: #0b0c10;
+            float: left;
         }
         .header{
             position: relative;
@@ -51,8 +62,6 @@
             .sidebar{
                 height: 100%;
                 width: 20%;
-                align-self: left;
-                display: inline-block;
             }
             .buttons{
                 display: none;
@@ -85,9 +94,15 @@
         }
     </style>
     </head>
-    <body>
+    <body style="background-color: #eae7dc;">
         <div class="header">
             <img src="https://i.imgur.com/elglZ3W.png" class="img">
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-secondary">Home</button>
+            <button type="button" class="btn btn-secondary">Applications</button>
+            <button type="button" class="btn btn-secondary">Documentation</button>
+            <button type="button" class="btn btn-secondary">Downloads</button>
         </div>
         <div class="sidebar">
             <ul class="list-group list-grout-flush" style="width: 100%; font-size: 1.5vw;">
@@ -105,14 +120,19 @@
                 </li>
             </ul>
         </div>
-        <div class="buttons">
-            <button type="button" class="btn btn-secondary">Home</button>
-            <button type="button" class="btn btn-secondary">Applications</button>
-            <button type="button" class="btn btn-secondary">Documentation</button>
-            <button type="button" class="btn btn-secondary">Downloads</button>
-        </div>
         <div class="container">
-
+            <h1>
+                What is Python?
+            </h1>
+            <p>
+                Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. 
+                Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very 
+                attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect
+                existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore 
+                reduces the cost of program maintenance. Python supports modules and packages, which encourages program 
+                modularity and code reuse. The Python interpreter and the extensive standard library are available in source 
+                or binary form without charge for all major platforms, and can be freely distributed.
+            </p>
         </div>
     </body>
 </html>
