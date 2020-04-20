@@ -21,7 +21,7 @@ p{
     font-family: 'Cairo';
     overflow: scroll;
 }
-#sidebar{
+.sidebar{
     font-size: 30px;
     text-align: center;
     padding: 20px;
