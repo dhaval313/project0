@@ -1,0 +1,15 @@
+$size: 100%;
+html{
+    height:$size;
+}
+html{
+    body{
+        height: $size;
+    }
+}
+%width{
+    width: $size;
+}
+.sidebar{
+    @extend %width;
+}
